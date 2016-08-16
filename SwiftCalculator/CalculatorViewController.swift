@@ -57,7 +57,16 @@ class CalculatorViewController: UIViewController
     {
         theBrain.hasOperatorBeenPicked = true
         theBrain.operatorType = sender.currentTitle!
+        
+        //let result = theBrain.checkTheOperator(whichOperatorType: theBrain.operatorType)
+       // displayLabel.text = result
+        
         displayLabel.text = ""
+        
+/*
+        let result = theBrain.performTransactionIfPossible(whichOperatorType: theBrain.operatorType)
+        displayLabel.text = result
+ */
         
     }
     

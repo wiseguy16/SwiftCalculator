@@ -18,6 +18,7 @@ class Brain
     var answerNumber = 0.0
     var operatorType: String
     var hasOperatorBeenPicked: Bool
+    var isThisUnaryOperator: Bool
     
     init()
     {
@@ -26,6 +27,73 @@ class Brain
         operatorType = "none"
         answer = ""
         hasOperatorBeenPicked = false
+        isThisUnaryOperator = false
+    }
+    
+    func checkTheOperator(whichOperatorType: String) -> String  // **********  Fix this section!!!!  **************
+    {
+            switch whichOperatorType
+          {
+            case "√":
+            
+            if hasOperatorBeenPicked == false
+            {
+                if number1 > 0
+                {
+                    answerNumber = sqrt(number1)
+                    number1 = answerNumber
+                }
+                else
+                {
+                    answer = "Error"
+                }
+            }
+            else
+            {
+                if number2 > 0
+                {
+                    answerNumber = sqrt(number2)
+                    number2 = answerNumber
+                }
+                else
+                {
+                    answer = "Error"
+                }
+            }
+            case "%":
+            if hasOperatorBeenPicked == false
+            {
+                answerNumber = number1 / 100
+                number1 = answerNumber
+            }
+            else
+            {
+                answerNumber = number2 / 100
+                number2 = answerNumber
+            }
+            
+            case "+/-":
+            if hasOperatorBeenPicked == false
+            {
+                answerNumber = number1 * -1
+                number1 = answerNumber
+            }
+            else
+            {
+                answerNumber = number1 * -1
+                number2 = answerNumber
+            }
+            default:
+                answer = ""
+                
+          }
+        if answer != "Error" && answer != ""
+        {
+            answer = String(format: "%g", answerNumber)
+        }
+        
+        return answer
+
     }
     
     func setTheOperatorType(whichOperatorType: String)
@@ -33,9 +101,12 @@ class Brain
         
         switch whichOperatorType
         {
-        case "+":
-            number1 = number2
-            
+        case "√":
+            answerNumber = number1 + number2
+        case "%":
+            answerNumber = number1 + number2
+        case "+/-":
+            answerNumber = number1 + number2
         default:
             break
         }
@@ -49,6 +120,10 @@ class Brain
         
         switch whichOperatorType
         {
+            
+        
+
+            
         case "+":
             answerNumber = number1 + number2
         case "-":
@@ -64,6 +139,7 @@ class Brain
             {
                 answer = "Error"
             }
+        
         default:
             break
         }
@@ -88,6 +164,7 @@ class Brain
         operatorType = "none"
         answer = ""
         hasOperatorBeenPicked = false
+        isThisUnaryOperator = false
 
     }
 }
