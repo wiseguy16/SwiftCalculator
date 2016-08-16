@@ -26,63 +26,123 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpw-Ot-0Oq">
                                 <state key="normal" title="AC"/>
+                                <connections>
+                                    <action selector="clearTransaction:" destination="dNT-xi-jQV" eventType="touchUpInside" id="lnr-6O-t2Q"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbX-hR-5mt">
                                 <state key="normal" title="+/-"/>
+                                <connections>
+                                    <action selector="operatorTapped:" destination="dNT-xi-jQV" eventType="touchUpInside" id="gYu-Wk-qmU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9v-AL-aZM">
                                 <state key="normal" title="7"/>
+                                <connections>
+                                    <action selector="operandTapped:" destination="dNT-xi-jQV" eventType="touchUpInside" id="2M4-WO-QPC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eac-tH-jPM">
                                 <state key="normal" title="%"/>
+                                <connections>
+                                    <action selector="operatorTapped:" destination="dNT-xi-jQV" eventType="touchUpInside" id="I0F-Nk-Atg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUy-aq-wmS">
                                 <state key="normal" title="÷"/>
+                                <connections>
+                                    <action selector="operatorTapped:" destination="dNT-xi-jQV" eventType="touchUpInside" id="0tD-dq-e7M"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKY-c1-2fm">
                                 <state key="normal" title="8"/>
+                                <connections>
+                                    <action selector="operandTapped:" destination="dNT-xi-jQV" eventType="touchUpInside" id="HFy-Tz-qRZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBz-YA-x5p">
                                 <state key="normal" title="*"/>
+                                <connections>
+                                    <action selector="operatorTapped:" destination="dNT-xi-jQV" eventType="touchUpInside" id="Tke-6B-utg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twJ-8L-S0i">
                                 <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="operandTapped:" destination="dNT-xi-jQV" eventType="touchUpInside" id="6pC-uM-N46"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ci-Er-AwS">
                                 <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="operandTapped:" destination="dNT-xi-jQV" eventType="touchUpInside" id="o4A-Fq-SXJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kx4-de-a3F">
                                 <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="operatorTapped:" destination="dNT-xi-jQV" eventType="touchUpInside" id="4b8-0j-83f"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEM-cL-77Q">
                                 <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="operandTapped:" destination="dNT-xi-jQV" eventType="touchUpInside" id="DIs-X3-aO5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJh-5t-HrJ">
                                 <state key="normal" title="√"/>
+                                <connections>
+                                    <action selector="operatorTapped:" destination="dNT-xi-jQV" eventType="touchUpInside" id="Moe-kC-6X3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddA-YK-AP5">
                                 <state key="normal" title="="/>
+                                <connections>
+                                    <action selector="performTransaction:" destination="dNT-xi-jQV" eventType="touchUpInside" id="CE0-df-ZLF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwg-TG-lOk">
                                 <state key="normal" title="9"/>
+                                <connections>
+                                    <action selector="operandTapped:" destination="dNT-xi-jQV" eventType="touchUpInside" id="UDd-xf-13v"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYS-lh-Xo7">
                                 <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="operatorTapped:" destination="dNT-xi-jQV" eventType="touchUpInside" id="4yQ-2S-iBU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Pm-6Y-cYW">
                                 <state key="normal" title="4"/>
+                                <connections>
+                                    <action selector="operandTapped:" destination="dNT-xi-jQV" eventType="touchUpInside" id="hOy-AW-UTp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11j-OV-X9w">
                                 <state key="normal" title="6"/>
+                                <connections>
+                                    <action selector="operandTapped:" destination="dNT-xi-jQV" eventType="touchUpInside" id="7TT-Dg-rQ1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmo-wv-Vjx">
                                 <state key="normal" title="5"/>
+                                <connections>
+                                    <action selector="operandTapped:" destination="dNT-xi-jQV" eventType="touchUpInside" id="vYf-dF-YvC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlD-ZA-MPO">
                                 <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="operandTapped:" destination="dNT-xi-jQV" eventType="touchUpInside" id="lhp-es-wml"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8B-Po-Wei">
                                 <state key="normal" title="."/>
+                                <connections>
+                                    <action selector="operandTapped:" destination="dNT-xi-jQV" eventType="touchUpInside" id="hGH-jS-7JI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -175,6 +235,9 @@
                             <constraint firstItem="zlD-ZA-MPO" firstAttribute="height" secondItem="9Pm-6Y-cYW" secondAttribute="height" id="ziP-LA-Kt3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="14v-Ds-0DA" id="cMG-ah-P7o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HFi-rM-IJg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

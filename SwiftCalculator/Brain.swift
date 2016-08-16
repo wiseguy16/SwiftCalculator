@@ -10,5 +10,16 @@ import Foundation
 
 class Brain
 {
-    //
+    var operand1 : String
+    var operand2: String
+    var operatorType: String
+    var hasOperatorBeenPicked: Bool
+    
+    init()
+    {
+        operand1 = ""
+        operand2 = ""
+        operatorType = "none"
+        hasOperatorBeenPicked = false
+    }
 }
