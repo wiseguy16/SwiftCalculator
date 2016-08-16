@@ -40,7 +40,7 @@ class CalculatorViewController: UIViewController
         {
            displayLabel.text = ""
         }
-        displayLabel.text = displayLabel.text! + "\(sender.currentTitle)"
+        displayLabel.text = displayLabel.text! + "\(sender.currentTitle!)"
         
         if theBrain.hasOperatorBeenPicked == false
         {
@@ -57,6 +57,7 @@ class CalculatorViewController: UIViewController
     {
         theBrain.hasOperatorBeenPicked = true
         theBrain.operatorType = sender.currentTitle!
+        displayLabel.text = ""
         
     }
     
@@ -65,7 +66,11 @@ class CalculatorViewController: UIViewController
         
     }
     
-    @IBAction func clearTransaction(_ sender: UIButton) {
+    @IBAction func clearTransaction(_ sender: UIButton)
+    {
+        
+        print(theBrain.operand1)
+        print(theBrain.operand2)
     }
     
     

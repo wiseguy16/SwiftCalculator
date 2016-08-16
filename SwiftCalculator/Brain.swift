@@ -11,7 +11,9 @@ import Foundation
 class Brain
 {
     var operand1 : String
+    var number1 = 0.0
     var operand2: String
+    var number2 = 0.0
     var operatorType: String
     var hasOperatorBeenPicked: Bool
     
@@ -21,5 +23,24 @@ class Brain
         operand2 = ""
         operatorType = "none"
         hasOperatorBeenPicked = false
+    }
+    
+    func setTheOperatorType(whichOperatorType: String)
+    {
+        
+        switch whichOperatorType
+        {
+        case "+":
+            number1 = number2
+            
+        default:
+            break
+        }
+        
+    }
+    
+    func performTransactionIfPossible()
+    {
+        
     }
 }
