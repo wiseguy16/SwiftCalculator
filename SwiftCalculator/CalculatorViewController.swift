@@ -63,14 +63,16 @@ class CalculatorViewController: UIViewController
     
     @IBAction func performTransaction(_ sender: UIButton)
     {
-        
+        let result = theBrain.performTransactionIfPossible(whichOperatorType: theBrain.operatorType)
+        displayLabel.text = result
     }
     
     @IBAction func clearTransaction(_ sender: UIButton)
     {
-        
-        print(theBrain.operand1)
-        print(theBrain.operand2)
+        theBrain.clearTheBrain()
+        displayLabel.text = "0"
+     //   print(theBrain.operand1)
+     //   print(theBrain.operand2)
     }
     
     
