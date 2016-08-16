@@ -53,6 +53,19 @@ class CalculatorViewController: UIViewController
         
     }
     
+    @IBAction func unaryButtonTapped(_ sender: UIButton)
+    {
+        
+        let result = theBrain.performUnaryOperation(whichOperatorType: "\(sender.currentTitle!)")
+         displayLabel.text = result
+        
+        print("Number 1 is \(theBrain.operand1)")
+        print("Number 2 is \(theBrain.operand2)")
+        
+    }
+    
+    
+    
     @IBAction func operatorTapped(_ sender: UIButton)
     {
         theBrain.hasOperatorBeenPicked = true

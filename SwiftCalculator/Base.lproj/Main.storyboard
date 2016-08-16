@@ -33,7 +33,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbX-hR-5mt">
                                 <state key="normal" title="+/-"/>
                                 <connections>
-                                    <action selector="operatorTapped:" destination="dNT-xi-jQV" eventType="touchUpInside" id="gYu-Wk-qmU"/>
+                                    <action selector="unaryButtonTapped:" destination="dNT-xi-jQV" eventType="touchUpInside" id="03t-VM-rhi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9v-AL-aZM">
@@ -45,7 +45,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eac-tH-jPM">
                                 <state key="normal" title="%"/>
                                 <connections>
-                                    <action selector="operatorTapped:" destination="dNT-xi-jQV" eventType="touchUpInside" id="I0F-Nk-Atg"/>
+                                    <action selector="unaryButtonTapped:" destination="dNT-xi-jQV" eventType="touchUpInside" id="dJD-YB-61Q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUy-aq-wmS">
@@ -93,7 +93,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJh-5t-HrJ">
                                 <state key="normal" title="√"/>
                                 <connections>
-                                    <action selector="operatorTapped:" destination="dNT-xi-jQV" eventType="touchUpInside" id="Moe-kC-6X3"/>
+                                    <action selector="unaryButtonTapped:" destination="dNT-xi-jQV" eventType="touchUpInside" id="bh5-tP-gfO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddA-YK-AP5">

@@ -30,68 +30,69 @@ class Brain
         isThisUnaryOperator = false
     }
     
-    func checkTheOperator(whichOperatorType: String) -> String  // **********  Fix this section!!!!  **************
+    func performUnaryOperation(whichOperatorType: String) -> String  // **********  Fix this section!!!!  **************
     {
+        if hasOperatorBeenPicked == false
+        {
+            number1 = Double(operand1)!
+            
             switch whichOperatorType
           {
             case "√":
-            
-            if hasOperatorBeenPicked == false
-            {
                 if number1 > 0
                 {
                     answerNumber = sqrt(number1)
-                    number1 = answerNumber
                 }
                 else
                 {
                     answer = "Error"
                 }
-            }
-            else
+            case "%":
+                answerNumber = number1 / 100
+            case "+/-":
+                answerNumber = number1 * -1
+            default:
+                break
+          }
+            
+        if answer != "Error"
             {
+                answer = String(format: "%g", answerNumber)
+                number1 = answerNumber
+                operand1 = "\(number1)"
+            }
+        }
+            
+        else
+        {
+            number2 = Double(operand2)!
+            
+            switch whichOperatorType
+            {
+            case "√":
                 if number2 > 0
                 {
                     answerNumber = sqrt(number2)
-                    number2 = answerNumber
                 }
                 else
                 {
                     answer = "Error"
                 }
-            }
             case "%":
-            if hasOperatorBeenPicked == false
-            {
-                answerNumber = number1 / 100
-                number1 = answerNumber
-            }
-            else
-            {
                 answerNumber = number2 / 100
-                number2 = answerNumber
+            case "+/-":
+                answerNumber = number2 * -1
+            default:
+                break
             }
             
-            case "+/-":
-            if hasOperatorBeenPicked == false
+            if answer != "Error"
             {
-                answerNumber = number1 * -1
-                number1 = answerNumber
-            }
-            else
-            {
-                answerNumber = number1 * -1
+                answer = String(format: "%g", answerNumber)
                 number2 = answerNumber
+                operand2 = "\(number2)"
             }
-            default:
-                answer = ""
-                
-          }
-        if answer != "Error" && answer != ""
-        {
-            answer = String(format: "%g", answerNumber)
         }
-        
         return answer
 
     }
@@ -120,10 +121,6 @@ class Brain
         
         switch whichOperatorType
         {
-            
-        
-
-            
         case "+":
             answerNumber = number1 + number2
         case "-":
