@@ -318,7 +318,27 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="clear" destination="Bpw-Ot-0Oq" id="1GU-vx-18F"/>
+                        <outlet property="decimal" destination="e8B-Po-Wei" id="OiP-my-lg8"/>
                         <outlet property="displayLabel" destination="14v-Ds-0DA" id="cMG-ah-P7o"/>
+                        <outlet property="divide" destination="UUy-aq-wmS" id="btW-c9-vah"/>
+                        <outlet property="eight" destination="UKY-c1-2fm" id="wNr-gM-7Ep"/>
+                        <outlet property="equals" destination="ddA-YK-AP5" id="9Bk-QW-YyV"/>
+                        <outlet property="five" destination="fmo-wv-Vjx" id="Lwm-Zy-sqS"/>
+                        <outlet property="four" destination="9Pm-6Y-cYW" id="UIs-Wv-oDi"/>
+                        <outlet property="minus" destination="jYS-lh-Xo7" id="RcY-Yk-c0w"/>
+                        <outlet property="nine" destination="zwg-TG-lOk" id="Hnw-rU-p0v"/>
+                        <outlet property="one" destination="zlD-ZA-MPO" id="i0i-K0-d2U"/>
+                        <outlet property="percent" destination="eac-tH-jPM" id="7Ag-Eh-vx8"/>
+                        <outlet property="plus" destination="kx4-de-a3F" id="jJS-M9-5Yx"/>
+                        <outlet property="plusMinus" destination="KbX-hR-5mt" id="Edu-Bf-Imn"/>
+                        <outlet property="seven" destination="x9v-AL-aZM" id="Ddf-kH-Vfy"/>
+                        <outlet property="six" destination="11j-OV-X9w" id="kI8-iC-wvL"/>
+                        <outlet property="sqrt" destination="xJh-5t-HrJ" id="MXg-Ca-Ebi"/>
+                        <outlet property="three" destination="8ci-Er-AwS" id="d8N-lU-L8F"/>
+                        <outlet property="times" destination="uBz-YA-x5p" id="baa-2Z-ZVs"/>
+                        <outlet property="two" destination="twJ-8L-S0i" id="fQr-Pl-oGk"/>
+                        <outlet property="zero" destination="EEM-cL-77Q" id="rVd-0C-bc2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HFi-rM-IJg" userLabel="First Responder" sceneMemberID="firstResponder"/>
