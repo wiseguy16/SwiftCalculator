@@ -23,8 +23,6 @@ class CalculatorViewController: UIViewController
         displayLabel.text = "0"
         theBrain.operatorType = "none"
         
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning()
@@ -55,6 +53,14 @@ class CalculatorViewController: UIViewController
     
     @IBAction func unaryButtonTapped(_ sender: UIButton)
     {
+        if theBrain.hasOperatorBeenPicked == false
+        {
+            theBrain.operand1 = displayLabel.text!
+        }
+        else
+        {
+            theBrain.operand2 = displayLabel.text!
+        }
         
         let result = theBrain.performUnaryOperation(whichOperatorType: "\(sender.currentTitle!)")
          displayLabel.text = result
@@ -70,16 +76,7 @@ class CalculatorViewController: UIViewController
     {
         theBrain.hasOperatorBeenPicked = true
         theBrain.operatorType = sender.currentTitle!
-        
-        //let result = theBrain.checkTheOperator(whichOperatorType: theBrain.operatorType)
-       // displayLabel.text = result
-        
         displayLabel.text = ""
-        
-/*
-        let result = theBrain.performTransactionIfPossible(whichOperatorType: theBrain.operatorType)
-        displayLabel.text = result
- */
         
     }
     
@@ -87,26 +84,17 @@ class CalculatorViewController: UIViewController
     {
         let result = theBrain.performTransactionIfPossible(whichOperatorType: theBrain.operatorType)
         displayLabel.text = result
+        
+        theBrain.operand1 = displayLabel.text!
+        theBrain.operand2 = ""
+      
+        
     }
     
     @IBAction func clearTransaction(_ sender: UIButton)
     {
         theBrain.clearTheBrain()
         displayLabel.text = "0"
-     //   print(theBrain.operand1)
-     //   print(theBrain.operand2)
     }
     
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

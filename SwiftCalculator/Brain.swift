@@ -30,14 +30,49 @@ class Brain
         isThisUnaryOperator = false
     }
     
-    func performUnaryOperation(whichOperatorType: String) -> String  // **********  Fix this section!!!!  **************
+    func performTransactionIfPossible(whichOperatorType: String) -> String
+    {
+        number1 = Double(operand1)!
+        number2 = Double(operand2)!
+        
+        switch whichOperatorType
+        {
+        case "+":
+            answerNumber = number1 + number2
+        case "-":
+            answerNumber = number1 - number2
+        case "*":
+            answerNumber = number1 * number2
+        case "÷":
+            if number2 != 0
+            {
+            answerNumber = number1 / number2
+            }
+            else
+            {
+                answer = "Error"
+            }
+        
+        default:
+            break
+        }
+        if answer != "Error"
+        {
+        answer = String(format: "%g", answerNumber)
+        }
+        
+        return answer
+ 
+    }
+    
+    func performUnaryOperation(whichOperatorType: String) -> String
     {
         if hasOperatorBeenPicked == false
         {
             number1 = Double(operand1)!
             
             switch whichOperatorType
-          {
+            {
             case "√":
                 if number1 > 0
                 {
@@ -53,9 +88,9 @@ class Brain
                 answerNumber = number1 * -1
             default:
                 break
-          }
+            }
             
-        if answer != "Error"
+            if answer != "Error"
             {
                 answer = String(format: "%g", answerNumber)
                 number1 = answerNumber
@@ -94,61 +129,11 @@ class Brain
             }
         }
         return answer
+        
+    }
 
-    }
     
-    func setTheOperatorType(whichOperatorType: String)
-    {
-        
-        switch whichOperatorType
-        {
-        case "√":
-            answerNumber = number1 + number2
-        case "%":
-            answerNumber = number1 + number2
-        case "+/-":
-            answerNumber = number1 + number2
-        default:
-            break
-        }
-        
-    }
     
-    func performTransactionIfPossible(whichOperatorType: String) -> String
-    {
-        number1 = Double(operand1)!
-        number2 = Double(operand2)!
-        
-        switch whichOperatorType
-        {
-        case "+":
-            answerNumber = number1 + number2
-        case "-":
-            answerNumber = number1 - number2
-        case "*":
-            answerNumber = number1 * number2
-        case "÷":
-            if number2 != 0
-            {
-            answerNumber = number1 / number2
-            }
-            else
-            {
-                answer = "Error"
-            }
-        
-        default:
-            break
-        }
-        if answer != "Error"
-        {
-        answer = String(format: "%g", answerNumber)
-        }
-        
-        return answer
-        
- 
-    }
     
     func clearTheBrain()
     {
